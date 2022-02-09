@@ -93,6 +93,16 @@ nav ul li {
   margin: 0 0 0 30px;
   font-weight: 500;
 }
+nav ul i {
+  font-size: 25px;
+  position: absolute;
+  right: 10%;
+  cursor: pointer;
+  color: white;
+}
+#menu {
+  display: none;
+}
 .nav-color {
   background-color: #fff;
   transition: background 0.5s linear;
@@ -158,7 +168,6 @@ nav ul li {
   left: 0;
   top: 100px;
   width: 100%;
-
   height: 50px;
   max-height: 50px;
   -webkit-animation: rotate 3s infinite linear;
@@ -584,7 +593,14 @@ footer article .footerCont .displayFlex .fa /* Todos os (I) */ {
   max-width: 1200px;
   margin: 0 auto;
 }
-
+@media (max-width: 812px) {
+  nav li {
+    display: none;
+  }
+  #menu {
+    display: inline;
+  }
+}
 /**/
 @media (min-width: 576px) and (max-width: 767px) {
   #nav {
